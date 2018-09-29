@@ -47,6 +47,7 @@ export default function register() {
       } else {
         // Is not local host. Just register service worker
         registerValidSW(swUrl);
+        console.log("NAO REGISTRADo? current env", process.env.NODE_ENV)
       }
     });
   }
@@ -56,6 +57,7 @@ function registerValidSW(swUrl) {
   navigator.serviceWorker
     .register(swUrl)
     .then(registration => {
+      console.log("RW registered")
       registration.onupdatefound = () => {
         const installingWorker = registration.installing;
         installingWorker.onstatechange = () => {
