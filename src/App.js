@@ -7,11 +7,13 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h2>
-            MAE, Quero ser Programador! Vamos parar de gastar dinheio com facul de Psiciologia. kk
+            COE JOSMAR, BAIXA SABAGAÇA AIII. TOMAA!!!
+            {/* MAE, Quero ser Programador! Vamos parar de gastar dinheio com facul de Psiciologia. kk */}
           </h2>
           <h2>
-            C##
-            eu passar pra ufes ? fico no curso : foco no que realmente quero trabar;  
+            CHUPA ESSA MANGA!
+            {/* C## */}
+            {/* eu passar pra ufes ? fico no curso : foco no que realmente quero trabar;   */}
           </h2>
 
         </header>
