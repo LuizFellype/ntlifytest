@@ -7,10 +7,10 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h2>
-            COE JOSMAR, BAIXA SABAGAÇA AIII. TOMAA!
+            Testing PWA config!
           </h2>
           <h2>
-             CHUPA ESSA MANGA - teste theme-color
+             Waiting for your feedback.
           </h2>
 
         </header>
