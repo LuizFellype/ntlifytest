@@ -10,7 +10,7 @@ class App extends Component {
             COE JOSMAR, BAIXA SABAGAÇA AIII. TOMAA!
           </h2>
           <h2>
-             CHUPA ESSA MANGA
+             CHUPA ESSA MANGA - teste theme-color
           </h2>
 
         </header>
