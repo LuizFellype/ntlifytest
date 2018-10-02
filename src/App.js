@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import LuizaoCamera from './Luizao/Camera'
 
 class App extends Component {
   render() {
@@ -14,9 +15,7 @@ class App extends Component {
           </h2>
 
         </header>
-        <p className="App-intro">
-
-        </p>
+        <LuizaoCamera />
       </div>
     );
   }
