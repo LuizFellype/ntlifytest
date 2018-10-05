@@ -34,7 +34,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        {this.state.s}
+        {this.state.s === null ? " nada " : this.state.s}
         <div id="d" style={{border: "solid 1px"}} onClick={this.scan}>
           diviaqui....
         </div>
