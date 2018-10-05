@@ -29,7 +29,7 @@ export default class App extends Component {
       Quagga.start();
   });
 
-  Quagga.onProcessed((s) => this.state({s}))
+  Quagga.onProcessed((s) => this.setState({s}))
   }
 
   stop = () => Quagga.stop()
