@@ -30,19 +30,22 @@ export default class App extends Component {
   });
 
   Quagga.onProcessed((s) => {
+    if (s !== undefined){
+      Quagga.stop()
+    }
     this.setState({s})
     console.log(s)
   })
   }
 
-  stop = () => Quagga.stop()
+  showAquilo = () => console.log(this.state.s)
 
   render() {
     return (
       <div>
-        {this.state.s}
+        <button onClick={this.showAquilo} style={{height: "100px", width: "100px"}} >SHOW</button>
         <div id="d" style={{border: "solid 1px"}} onClick={this.scan}>
-          diviaqui....
+          Div
         </div>
         <button onClick={this.stop}>Stop</button>
       </div>
