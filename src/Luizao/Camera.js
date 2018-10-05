@@ -1,13 +1,46 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react'
+import Quagga from 'quagga';
 
-class Camera extends Component {
+
+
+export default class App extends Component {
+  
+  scan = () => {
+
+    Quagga.init({
+      inputStream : {
+          name : "Live",
+          type : "LiveStream",
+           // Or '#yourElement' (optional)
+          target: document.querySelector('#d') 
+      },
+      decoder : {
+          readers : ["code_128_reader"]
+      }
+  }, function(err) {
+      if (err) {
+          console.log(err);
+          return
+      }
+      console.log("Initialization finished. Ready to start");
+      Quagga.start();
+  });
+
+  Quagga.onProcessed((s) => console.log("testando", s))
+  }
+
+  stop = () => Quagga.stop()
+
   render() {
     return (
-      <div style={{marginTop: "20px" }}>
-        <input type="file" accept="image/*" capture="environment" />
+      <div>
+
+        <div id="d" style={{border: "solid 1px"}} onClick={this.scan}>
+          diviaqui
+        </div>
+        <button onClick={this.stop}>Stop</button>
       </div>
-    );
+    )
   }
 }
 
-export default Camera;
