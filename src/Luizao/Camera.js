@@ -36,7 +36,7 @@ export default class App extends Component {
       <div>
         {this.state.s}
         <div id="d" style={{border: "solid 1px"}} onClick={this.scan}>
-          diviaqui
+          diviaqui....
         </div>
         <button onClick={this.stop}>Stop</button>
       </div>
