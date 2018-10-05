@@ -26,7 +26,7 @@ export default class App extends Component {
       Quagga.start();
   });
 
-  Quagga.onProcessed((s) => console.log("testando", s))
+  Quagga.onProcessed((s) => this.state({s}))
   }
 
   stop = () => Quagga.stop()
@@ -34,7 +34,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-
+        {this.state.s}
         <div id="d" style={{border: "solid 1px"}} onClick={this.scan}>
           diviaqui
         </div>
