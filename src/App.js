@@ -8,14 +8,15 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h2>
-            Testing PWA config!
+            DUDUUU!
           </h2>
           <h2>
-             Waiting for your feedback.
+            Voce Pode fazer qualquer coisa aqui!
           </h2>
-
         </header>
-        <LuizaoCamera />
+        <div>
+          Coe mlk!
+        </div>
       </div>
     );
   }
