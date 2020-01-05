@@ -8,14 +8,18 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h2>
-            DUDUUU!
+            GIOVANA DORMIRÁ com CANAL ? ...
           </h2>
           <h2>
-            Voce Pode fazer qualquer coisa aqui!
+            PATRIK RECEBERÁ uma KIKADA ? ...
+          </h2>
+      
+          <h2>
+            Tã Tan Taammmm - X)
           </h2>
         </header>
         <div>
-          Coe mlk!
+          
         </div>
       </div>
     );
